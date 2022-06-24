@@ -20,9 +20,9 @@
             createCanvas(windowWidth, windowHeight, WEBGL);
         }
         function draw(){
-            background('white');
-            rotateY(frameCount*0.01);
-            rotateX(frameCount*0.01);
+            // background('white');
+            rotateY(mouseX/windowWidth);
+            rotateX(-mouseY/windowHeight);
             box(50);
         }
     </script>
