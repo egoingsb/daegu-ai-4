@@ -3,8 +3,29 @@
 <head>
 <title>WEB!!</title>
 <meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+<style>
+    #defaultCanvas0 {
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:-1;
+    }
+</style>
 </head>
 <body>
+    <script>
+        function setup(){
+            console.log('setup');
+            createCanvas(windowWidth, windowHeight, WEBGL);
+        }
+        function draw(){
+            background('white');
+            rotateY(frameCount*0.01);
+            rotateX(frameCount*0.01);
+            box(50);
+        }
+    </script>
     <script>
         let 몸통 = document.querySelector('body');
     </script>
@@ -27,5 +48,10 @@
 </ul>
 <h2>Welcome</h2>
 <a href="http://info.cern.ch">WWW</a> is <u>World <strong>Wide</strong> WEB</u>!!! <br>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolores dolor, sit repudiandae quidem, dolore eveniet odit minima amet aut, quasi maxime laudantium. Repellat laborum officia illum ab excepturi enim!
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolores dolor, sit repudiandae quidem, dolore eveniet odit minima amet aut, quasi maxime laudantium. Repellat laborum officia illum ab excepturi enim!</p>
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolores dolor, sit repudiandae quidem, dolore eveniet odit minima amet aut, quasi maxime laudantium. Repellat laborum officia illum ab excepturi enim!</p>
 </body>
 </html>
