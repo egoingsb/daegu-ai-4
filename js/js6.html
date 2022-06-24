@@ -33,5 +33,16 @@
                 document.write(person2[i]);
             }
         </script>
+
+        <h1>Button Hell</h1>
+        <script>
+            var tag = '';
+            for(var i=0; i<1000; i++){
+                tag = tag + `<input type="button" onclick="        
+                    this.style.backgroundColor='red';
+                " value="press">`
+            }
+            document.write(tag);
+        </script>
     </body>
 </html>

@@ -33,10 +33,18 @@
         if(this.value === 'night'){
             몸통.style.color = 'white';
             몸통.style.backgroundColor = 'black';
+            var as = document.querySelectorAll('a');
+            for(let i=0; i<as.length; i=i+1){
+                as[i].style.color = 'white';
+            }
             this.value = 'day';
         } else { 
             몸통.style.color = 'black';
             몸통.style.backgroundColor = 'white';
+            var as = document.querySelectorAll('a');
+            for(let i=0; i<as.length; i=i+1){
+                as[i].style.color = 'black';
+            }
             this.value = 'night';
         }
     ">
