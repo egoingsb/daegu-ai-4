@@ -9,13 +9,28 @@
 
         <h1>비교연산자 - Comparison Operator</h1>
         <script>
-            documnent.write(1 === 1); // true
+            document.write(1 === 1); // true
             document.write('<br>');
             document.write(1 === 2); // false
             document.write('<br>');
             document.write(1 > 2); // false 
-            
-            
+        </script>
+        <h1>조건문 - conditional statements</h1>
+        <script>
+            document.write(1);
+            if(false) {
+                document.write(2);
+            }
+            document.write(3);
+        </script>
+        <script>
+            const 올바른아이디 = 'egoing';
+            const 입력한아이디 = prompt('아이디는요?');
+            if(올바른아이디 === 입력한아이디){
+                document.write('어서오세요!');
+            } else {
+                document.write('뉘슈?');
+            }
         </script>
     </body>
 </html>
