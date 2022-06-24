@@ -9,12 +9,15 @@
         let 몸통 = document.querySelector('body');
     </script>
     <input type="button" value="night" onclick="
-        몸통.style.color = 'white';
-        몸통.style.backgroundColor = 'black';
-    ">
-     <input type="button" value="day" onclick="
-        몸통.style.color = 'black';
-        몸통.style.backgroundColor = 'white';
+        if(this.value === 'night'){
+            몸통.style.color = 'white';
+            몸통.style.backgroundColor = 'black';
+            this.value = 'day';
+        } else { 
+            몸통.style.color = 'black';
+            몸통.style.backgroundColor = 'white';
+            this.value = 'night';
+        }
     ">
 <h1><a href="index.html">WEB</a></h1>
 <ul>
