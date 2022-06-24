@@ -2,8 +2,13 @@
     <body>
         <h1>부가세율 계산기</h1>
         <input type="button" value="계산" onclick="
-            const 부가세율 = 0.1;
-            let 가격 = prompt('가격?');
+            부가세율 = 0.1;
+            가격 = prompt('가격?');
+            alert(가격 * 부가세율);
+        ">
+        <input id="cost" type="number" value="100" onchange="
+            부가세율 = 0.1;
+            가격 = this.value;
             alert(가격 * 부가세율);
         ">
     </body>
