@@ -9,6 +9,5 @@ def substract():
     return left-right
 # 
 
-
 print(sum())
 print(substract())
