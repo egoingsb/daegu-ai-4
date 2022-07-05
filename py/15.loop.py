@@ -1,7 +1,6 @@
-names = [
-    ['egoing', '경기도'], 
-    ['basta', '서울'], 
-    ['duru', '성남']
+persons = [
+    {'name':'egoing', 'region':'경기도'}, 
+    {'name':'basta', 'region':'서울'}
 ]
-for name in names:
-    print(name[0])
+for person in persons:
+    print(person['name'])
